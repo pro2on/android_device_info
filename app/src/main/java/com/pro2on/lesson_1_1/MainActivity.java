@@ -24,15 +24,6 @@ public class MainActivity extends ActionBarActivity {
 
         setContentView(R.layout.activity_main);
 
-        /*
-        TableLayout tableLayout = (TableLayout) findViewById(R.id.tableLayout);
-
-        TableRow row0 = new TableRow(this);
-        row0.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT,
-                LayoutParams.WRAP_CONTENT));
-        TextView label = new TextView(this);
-        label.setText("id");
-        */
 
         TableLayout tableLayout = ModelFactory.getInstance().getDeviceInformationModel().getInformationAsTableLayout(this);
         LinearLayout linearLayout = (LinearLayout) findViewById(R.id.linearLayout);
